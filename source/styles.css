@@ -1,1 +1,93 @@
 /* Coloca aquí los selectores y estilos CSS */
+
+:root {
+  --black: rgb(39 39 39 / 86%);
+  --sombrita: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+}
+
+body {
+  margin: 0;
+  font-family: Rubik;
+}
+
+section {
+  font-size: 0px;
+  position: relative;
+}
+
+section img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+section .overlay {
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.hero {
+  padding-top: 150px;
+  text-align: center;
+}
+
+section .overlay h1,
+section .overlay h2 {
+  color: gray;
+  margin: 0;
+}
+
+section .overlay h1 {
+  font-size: 4em;
+  color: var(--black);
+}
+
+section .overlay h2 {
+  font-size: 1.3em;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+.button {
+  background: var(--black);
+  color: white;
+  padding: 15px 42px;
+  border-radius: 35px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.button.white {
+  background: rgba(255, 254, 254, 0.6);
+  color: black;
+}
+
+.section-menu {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  padding-bottom: 10%;
+  padding-top: 40px;
+}
+
+/* Menu TESLA */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
